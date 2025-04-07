@@ -1,0 +1,14 @@
+CREATE TABLE schedules (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title TEXT NOT NULL,
+    task TEXT NOT NULL,
+    username VARCHAR(100) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    created_at DATETIME DEFAULT NOW(),
+    updated_at DATETIME DEFAULT NOW() ON UPDATE NOW()
+)
+
+# CREATE TABLE user (
+#     id INT AUTO_INCREMENT PRIMARY KEY,
+#
+# )
